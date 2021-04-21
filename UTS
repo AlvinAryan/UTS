@@ -1,0 +1,165 @@
+NO 2. 
+package namaUmur;
+
+
+public class namaUmur {
+    String nama;
+    int umur;
+
+    void  printOrang1(){
+        System.out.println("Nama: " + nama);
+        System.out.println("Umur: " + umur);
+    }
+     void  printOrang2(){
+        System.out.println("Nama: " + nama);
+        System.out.println("Umur: " + umur);
+    }
+}
+
+package namaUmur;
+
+
+public class namaUmurBeraksi {
+     
+        public static void main(String[] args){
+	  	namaUmur orang = new namaUmur();
+
+                System.out.println("Nama  : Alvin Aryan");
+                System.out.println("Nim   : 11200930000104");
+                System.out.println("Kelas : 2D SISTEM INFORMASI");
+                System.out.println("_________\n");
+	 	orang.nama = "John Smith";
+	  	orang.umur = 24;
+	  	orang.printOrang1();
+          System.out.println("==========\n");
+                orang.nama = "Mary Sharp";
+	  	orang.umur = 52;
+	  	orang.printOrang2();
+}
+}
+
+###################################################################################################################################################################################
+
+no 3. 
+package InheritanceMatematika;
+
+    public class MatematikaCanggihBanget {
+        
+        
+        void pertambahan (double a, double b, double c, double d){
+            System.out.println(a + " + " + b + " + " + c  + " + " + d  + " = " +(a+b+c+d));
+        }
+        void pengurangan (double a, double b, double c, double d){
+            System.out.println(a + " - " + b + " - " + c  + " - " + d  + " = " +(a-b-c-d));
+        }
+        
+        void perkalian (double a, double b, double c, double d){
+            System.out.println(a + " * " + b + " * " + c  + " * " + d  + " = " +(a*b*c*d));
+        }
+        void pembagian (double a, double b, double c, double d){
+            System.out.println(a + " / " + b + " / " + c  + " / " + d  + " = " +(a/b/c/d));
+        }
+        void modulus (double a, double b, double c, double d){
+            System.out.println(a + " % " + b + " % " + c  + " % " + d  + " = " +(a%b%c%d));
+        }
+}
+
+package InheritanceMatematika;
+
+public class MatematikaCanggihBangetBeraksi {
+    public static void main(String[] args) {
+        
+        System.out.println("Nama  : Alvin Aryan");
+        System.out.println("Nim   : 11200930000104");
+        System.out.println("Kelas : 2D SISTEM INFORMASI");
+        System.out.println("==========Kalkulator Sederhana==========\n");
+        MatematikaCanggihBanget MatematikakuTersayang = new MatematikaCanggihBanget();
+        MatematikakuTersayang.pertambahan(5,6,7,8);
+        MatematikakuTersayang.pengurangan(5,6,7,8);
+        MatematikakuTersayang.perkalian(5,6,7,8);
+        MatematikakuTersayang.pembagian(5,6,7,8);
+        MatematikakuTersayang.modulus(5,6,7,8);
+        
+    }
+         
+}
+###################################################################################################################################################################################
+
+no. 4
+Berikut adalah code program berisi package dan class memanggil method
+package : SepedaGunung
+class       : SepedaBeraksi
+
+package SepedaGunung;
+
+public class Sepeda{
+	int gir;
+	
+	// method (mutator) dengan parameter
+	void setGir(int pertambahanGir) { 
+	   gir = gir + pertambahanGir;
+           
+        }
+        void plus(int penguranganGir){
+           gir = gir - penguranganGir;
+	// method (accessor)
+        }
+	int getGir() {
+	    return gir;
+	}
+}
+
+package SepedaGunung;
+
+
+public class SepedaBeraksi{
+ 		public static void main(String[] args) {
+          	Sepeda sepedaku = new Sepeda();
+	     
+		   	sepedaku.setGir(5); // menset nilai gir = 1 (sebelumnya 0) 
+			System.out.println("Gir staticsaat ini:"  + sepedaku.getGir());
+
+			sepedaku.plus(3); // menambahkan 3 pada posisi gir saat ini (1)	 									              
+          System.out.println(“Gir saat ini: “ + sepedaku.getGir());
+                        System.out.println("Gir saat ini: " + sepedaku.getGir());
+                }
+}
+###################################################################################################################################################################################
+no 6. 
+private void kelvin(){
+        input = Double.parseDouble(txtAwal.getText());
+        
+        kelvin     = input;
+        celcius    = kelvin-273.15;
+        fahrenheit = kelvin*1.8-459.67;
+        reamur     =(kelvin-273.15) * 0.8;
+        
+        hasilcelcius    = Double.toString(celcius);
+        txtCelcius.setText(hasilcelcius);
+        
+        hasilfahrenheit = Double.toString(fahrenheit);
+        txtFahrenheit.setText(hasilfahrenheit);
+        
+                                  hasilreamur     = Double.toString(reamur);
+                                   txtReamur.setText(hasilreamur);
+        
+        hasilkelvin     = Double.toString(kelvin);
+        txtKelvin.setText(hasilkelvin);
+    }
+
+private void btnKonversiActionPerformed(java.awt.event.ActionEvent evt) {                                            
+        
+        if(rbCelcius.isSelected()){
+            celcius();
+        }
+        else if(rbFahrenheit.isSelected()){
+            fahrenheit();
+        }
+                                    else if(rbReamur.isSelected()){
+                                    reamur();
+        }
+        else if(rbKelvin.isSelected()){
+            kelvin();
+        }    
+    }              
+event listener tombol conversi pada aplikasi merubah suhu dari kelvin ke reamur ada pada code yang menjorok kekanan.
